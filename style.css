@@ -370,7 +370,8 @@ nav .right-nav{
     border-radius: 5px;
 }
 .courses-page .course-cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 .course-cards .course-card{
@@ -379,8 +380,8 @@ nav .right-nav{
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
-    width: 20%;
-    height: 50vh;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
     box-shadow: 2px 2px 5px var(--primary-text);
 }
